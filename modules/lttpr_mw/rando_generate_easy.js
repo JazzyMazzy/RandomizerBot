@@ -13,7 +13,7 @@ module.exports = {
     };
     const shell = require('shelljs');
 //  arguments list defined in json
-    const args_array = require("/home/minecraft/Wahbot/commands/rando_generate_easy.json");
+    const args_array = require("../../commands/rando_generate_easy.json");
 //  initialize variables that persist outside each loop iteration
     let original_requester = message.author.id;
     let return_args = [];
