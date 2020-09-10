@@ -1,0 +1,7 @@
+//Change this file to config.json and fill in the fields with your server's info
+{
+	//Start of all commands to trigger your bot, including the trailing space. Example: "!Randobot "
+	"prefix": "",
+	//Your bot's discord login token
+	"token": ""
+}
