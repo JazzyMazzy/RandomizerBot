@@ -1,0 +1,12 @@
+[
+    {
+        "name": "defineunacceptableargs",
+        "arg": ["","","","","","","","","","","","","","","","","","","","","","","","","","","preset","","","","","","","preset","preset","preset","preset","preset","preset","preset","preset","preset","preset","preset","","","preset","preset"],
+        "value": ["nullspoiler","nulllogic","nullmode","nullswords","nullgoal","nulldifficulty","nullitemfunctionality","nulltimer","nullprogressiveitems","nullalgorithm","nullshuffleentrances","nullcrystalsganon","nullcrystalsGT","nullopenpyramid","nulllogging","nullcustomseed","nullcustomseedstring","nullcount","nullfastmenu","nullquickswap","nulldisablemusic","nullmapshuffle","nullcompassshuffle","nullkeyshuffle","nullbigkeyshuffle","nullretro","no","nullinventorystring","nullaccessibility","nullhints","nullnoshuffleganon","nullheartbeep","nullheartcolor","default","default","no","nullspritestring","none","none","default","default","no","no","nullbeemizerstring","nullmulti","nullnames","no","nullteamsstring"]
+    },
+    {
+        "name": "template",
+        "arg": ["preset","","","","","","","preset","","preset","","","","","preset","preset","preset","preset","preset","preset","preset","","","","","preset","preset","preset","","preset","","preset","preset","preset","preset","preset","preset","preset","preset","preset","preset","preset","preset","preset","prompt","prompt","preset","preset"],
+        "value": ["yes","","","","","","","none","","balanced","","","","","error","no","null","1","quadruple","yes","no","","","","","no","no","null","","yes","","half","random","default","default","no","null","none","none","default","default","no","no","null","nullmulti","nullnames","no","nullteamsstring"]
+    }
+]

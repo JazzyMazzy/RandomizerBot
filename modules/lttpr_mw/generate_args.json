@@ -1,0 +1,338 @@
+[
+  {
+    "name": "",
+    "parameter": "create spoiler? yes, no",
+    "acceptable_args": ["yes","no"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "logic? noglitches, minorglitches, nologic",
+    "acceptable_args": ["noglitches","minorglitches","nologic"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "mode? standard, open, inverted",
+    "acceptable_args": ["standard","open","inverted"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "swords? vanilla, assured, swordless, random",
+    "acceptable_args": ["random","assured","swordless","vanilla"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "goal? ganon, pedestal, dungeons, triforcehunt, crystals",
+    "acceptable_args": ["ganon","pedestal","dungeons","triforcehunt","crystals"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "difficulty? normal, hard, expert",
+    "acceptable_args": ["normal","hard","expert"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "item functionality? normal, hard, expert",
+    "acceptable_args": ["normal","hard","expert"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "timer? none, display, timed, timed-ohko, ohko, timed-countdown",
+    "acceptable_args": ["none","display","timed","timed-ohko","ohko","timed-countdown"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "progressive items? on, off, random",
+    "acceptable_args": ["on","off","random"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "algorithm? balanced, flood, vt21, vt22, vt25, vt26, freshness",
+    "acceptable_args": ["freshness","flood","vt21","vt22","vt25","vt26","balanced"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "shuffle entrances? vanilla, simple, restricted, full, crossed, insanity, restricted_legacy, madness_legacy, insanity_legacy, dungeonsfull, dungeonssimple",
+    "acceptable_args": ["vanilla","simple","restricted","full","crossed","insanity","restricted_legacy","madness_legacy","insanity_legacy","dungeonsfull","dungeonssimple"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "crystals needed to access ganon? random, 0-7",
+    "acceptable_args": ["random","0","1","2","3","4","5","6","7"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "crystals needed to access GT? random, 0-7",
+    "acceptable_args": ["random","0","1","2","3","4","5","6","7"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "open pyramid? no, yes",
+    "acceptable_args": ["yes","no"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "level of logging? error, info, warning, debug",
+    "acceptable_args": ["error","info","warning","debug"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "use custom seed? no, yes",
+    "acceptable_args": ["no","yes"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "respond with custom seed",
+    "acceptable_args": [],
+    "match_args": "false",
+    "skippable":"true"
+  },
+  {
+    "name": "",
+    "parameter": "count (number of seeds to generate, normal usage is just 1)? 1-20",
+    "acceptable_args": ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "fast menu? normal, instant, double, triple, quadruple, half",
+    "acceptable_args": ["normal","instant","double","triple","quadruple","half"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "quick swap? yes, no",
+    "acceptable_args": ["yes","no"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "disable music? no, yes",
+    "acceptable_args": ["yes","no"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "map shuffle? no, yes",
+    "acceptable_args": ["yes","no"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "compass shuffle? no, yes",
+    "acceptable_args": ["yes","no"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "key shuffle? no, yes",
+    "acceptable_args": ["yes","no"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "big key shuffle? no, yes",
+    "acceptable_args": ["yes","no"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "retro? no, yes",
+    "acceptable_args": ["yes","no"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "starting inventory? no, yes",
+    "acceptable_args": ["no","yes"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "respond with starting inventory string",
+    "acceptable_args": [],
+    "match_args": "false",
+    "skippable":"true"
+  },
+  {
+    "name": "",
+    "parameter": "accessibility? items, locations, none",
+    "acceptable_args": ["items","locations","none"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "hints? yes, no",
+    "acceptable_args": ["yes","no"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "no-shuffleganon? no, yes",
+    "acceptable_args": ["no","yes"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "heartbeep? normal, half, quarter, off, double",
+    "acceptable_args": ["double","normal","half","quarter","off"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "heart color? red, blue, green, yellow, random",
+    "acceptable_args": ["red","blue","green","yellow","random"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "overworld pallettes? default, random, blackout",
+    "acceptable_args": ["default","random","blackout"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "dungeon pallettes? default, random, blackout",
+    "acceptable_args": ["default","random","blackout"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "use a different sprite? no, yes",
+    "acceptable_args": ["no","yes"],
+    "match_args": "true",
+    "skippable": "false"
+  },
+  {
+    "name": "",
+    "parameter": "sprite arguments?",
+    "acceptable_args": [],
+    "match_args": "false",
+    "skippable": "true"
+  },
+  {
+    "name": "",
+    "parameter": "shuffle bosses? none, basic, normal, chaos",
+    "acceptable_args": ["none","basic","normal","chaos"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "shuffle enemies? none, shuffled, chaos",
+    "acceptable_args": ["none","shuffled","chaos"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "enemy health? default, easy, normal, hard, expert",
+    "acceptable_args": ["default","easy","normal","hard","expert"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "enemy damage? default, shuffled, chaos",
+    "acceptable_args": ["default","shuffled","chaos"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "shuffle pots? no, yes",
+    "acceptable_args": ["no","yes"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "beemizer? no, yes",
+    "acceptable_args": ["no","yes"],
+    "match_args": "true",
+    "skippable": "false"
+  },
+  {
+    "name": "",
+    "parameter": "respond with beemizer string",
+    "acceptable_args": [],
+    "match_args": "false",
+    "skippable": "true"
+  },
+  {
+    "name": "",
+    "parameter": "number of players? 1-20",
+    "acceptable_args": ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "name": "",
+    "parameter": "respond with player names seperated by commas (example: player1,player2,player3)",
+    "acceptable_args": [],
+    "match_args": "false",
+    "skippable": "false"
+  },
+  {
+    "name": "",
+    "parameter": "teams? no, yes",
+    "acceptable_args": ["no","yes"],
+    "match_args": "true",
+    "skippable": "false"
+  },
+  {
+    "name": "",
+    "parameter": "respond with teams string",
+    "acceptable_args": [],
+    "match_args": "false",
+    "skippable": "true"
+  }
+]

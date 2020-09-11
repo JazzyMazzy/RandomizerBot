@@ -11,7 +11,11 @@
 					 "second_rando": "/home/user/multiworld/ZOoTRandomizer/Randomizer.py"
 					},
 	//Key:Value pairs - Key is module, Value is full path to randomizer output directory - examples enclosed
-	"execoutputpath": {"lttpr_mw":"/home/minecraft/multiworld/ALttP_roms/",
+	"execoutputpath": {"lttpr_mw":"/home/user/multiworld/ALttP_roms/",
 					   "second_rando": "/home/user/multiworld/OoTR_roms/"
-					  }
+					  },
+	//Key:Value pairs - Key is module, Value is full path to input rom - examples enclosed
+	"roms": {"lttpr_mw": "/home/user/multiworld/ALttPEntranceRandomizer/zeldabase.sfc",
+			 "second_rando": "/home/user/multiworld/ZOoTRandomizer/baserom.rom",
+			}
 }

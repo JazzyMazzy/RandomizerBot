@@ -1,0 +1,14 @@
+[
+  {
+    "parameter": "number of players? 1-20",
+    "acceptable_args": ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],
+    "match_args": "true",
+    "skippable":"false"
+  },
+  {
+    "parameter": "respond with player names seperated by commas (example: player1,player2,player3)",
+    "acceptable_args": [],
+    "match_args": "false",
+    "skippable": "false"
+  }
+]
