@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { prefix, token, modules, executeables } = require('./config.json');
+const { prefix, token, modules, executeables, execoutputpath } = require('./config.json');
 const Discord = require("discord.js");
 
 const client = new Discord.Client();

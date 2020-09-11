@@ -2,6 +2,7 @@ module.exports = {
   name: 'rando_generate_easy',
   descriptions: 'generation of randomizer with pre-determined values and user input',
   async execute(message, args) {
+    const { execoutputpath } = require('../../config.json')
     function collect(collector){
 //    creates a new promise which makes the magic happen
       return new Promise(resolve => {
@@ -13,7 +14,7 @@ module.exports = {
     };
     const shell = require('shelljs');
 //  arguments list defined in json
-    const args_array = require("../../commands/rando_generate_easy.json");
+    const args_array = require('./rando_generate_easy.json');
 //  initialize variables that persist outside each loop iteration
     let original_requester = message.author.id;
     let return_args = [];
@@ -29,8 +30,8 @@ module.exports = {
       let collector = message.channel.createMessageCollector(filter);
       let await_collection = await collect(collector);
       return_args.push(await_collection);
-      let name_polling1 = shell.exec(`/home/minecraft/Wahbot/commands/screengrep.sh ${return_args[0]}`, {shell: '/bin/bash'}).stdout;
-      let name_polling2 = shell.exec(`/home/minecraft/Wahbot/commands/lsgrep.sh ${return_args[0]}`, {shell: '/bin/bash'}).stdout;
+      let name_polling1 = shell.exec(`./commands/screengrep.sh ${return_args[0]}`, {shell: '/bin/bash'}).stdout;
+      let name_polling2 = shell.exec(`./commands/lsgrep.sh ${return_args[0]}`, {shell: '/bin/bash'}).stdout;
       if (name_polling1 || name_polling2) {
         message.channel.send("this instance already exists, please run the running_instances command to see all existing instances");
         throw ("name exists");
@@ -61,8 +62,8 @@ module.exports = {
       };
       let return_string = return_args.join(' ');
       //message.channel.send(return_string);
-      shell.exec("/home/minecraft/Wahbot/commands/rando_generate_easy.sh "+return_string, {shell: '/bin/bash'}).stdout;
-      let file_array = shell.find(`/home/minecraft/multiworld/patched_roms/${return_args[0]}/`);
+      shell.exec(`${__dirname}/rando_generate_easy.sh `+return_string, {shell: '/bin/bash'}).stdout;
+      let file_array = shell.find(`${execoutputpath.lttpr_mw}${return_args[0]}/`);
       while (y < file_array.length) {
         if (y == 0) {
           y++;

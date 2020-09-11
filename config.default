@@ -1,7 +1,17 @@
-//Change this file to config.json and fill in the fields with your server's info
+//Change this file to config.json and fill in the fields with your server's info, then remove the comments because jsons can't have comments!!
 {
 	//Start of all commands to trigger your bot, including the trailing space. Example: "!Randobot "
 	"prefix": "",
 	//Your bot's discord login token
-	"token": ""
+	"token": "",
+	//Directory name of each mosule without any leading or trailing slashed, each one is an item in the array. Example ["lttpr","ootr"]
+	"modules": [""],
+	//Key:Value pairs - Key is module, Value is full path to randomizer executeable - examples enclosed
+	"executeables": {"lttpr_mw": "/home/user/multiworld/ALttPEntranceRandomizer/EntranceRandomizer.py",
+					 "second_rando": "/home/user/multiworld/ZOoTRandomizer/Randomizer.py"
+					},
+	//Key:Value pairs - Key is module, Value is full path to randomizer output directory - examples enclosed
+	"execoutputpath": {"lttpr_mw":"/home/minecraft/multiworld/ALttP_roms/",
+					   "second_rando": "/home/user/multiworld/OoTR_roms/"
+					  }
 }
