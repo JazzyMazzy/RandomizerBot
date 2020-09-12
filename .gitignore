@@ -2,3 +2,4 @@
 /config.json
 /package.json
 /package-lock.json
+/modules/lttpr_mw/generate_presets.json

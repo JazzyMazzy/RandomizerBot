@@ -10,7 +10,11 @@ Because I cannot provide the ROMs, the scope of this project growing to support 
 
 This is very much under construction.
 
-To function, you must rename config.default to config.json, populate the necessary fields, and remove all the comments.
+To function, you must:
+
+rename config.default to config.json, populate the necessary fields, and remove all the comments
+
+rename ./modules/lttpr_mw/generate_presets.default to generate_presets.json
 
 *Currently, there are still some hard-coded links that will be corrected upon rewrite. If you stumble upon this before that point, well... get in contact.
 
