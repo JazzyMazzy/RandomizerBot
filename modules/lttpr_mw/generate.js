@@ -40,25 +40,28 @@ module.exports = {
       };
 //    generate array of names to match
       let z = 2;
-      let preset_names = [];
+//    20201001 EY: changed array "preset_names" to "preset_names_to_match" to eliminate similar variable names
+      let preset_names_to_match = [];
       while (z < presets.length) {
         let preset_loop_obj = {};
-        preset_names.push(presets[z].name);
+        preset_names_to_match.push(presets[z].name);
         z++
       };
 //    prompt user to select preset
       filter = m => {
-        return preset_names.some(
+        return preset_names_to_match.some(
           user_input => user_input.toLowerCase() ===  m.content.toLowerCase()
         ) && m.author.id === original_requester;
       };
-      message.channel.send(`Generate what type? Available options: ${preset_names}`);
+      message.channel.send(`Generate what type? Available options: ${preset_names_to_match}`);
       collector = message.channel.createMessageCollector(filter);
       await_collection = await collect(collector);
       let preset_name_selection = await_collection;
 //    match preset based on response from user, and convert object to usable form
       let selected_preset_array = presets.filter(preset_filter_var => preset_filter_var.name && preset_filter_var.name === preset_name_selection);
       let selected_preset = selected_preset_array[0];
+//    20201001 EY: added variable for preset name to be used in the randomizer generator for the output name
+      let preset_name = selected_preset.name;
       let preset_args = selected_preset.arg;
       let preset_values = selected_preset.value;
 
@@ -175,7 +178,8 @@ module.exports = {
         return_string_array.push(` --teams ${return_args[48]}`);
       };
       return_string_array.push(` --outputpath ${execoutputpath.lttpr_mw}${return_args[0]}`);
-      return_string_array.push(` --outputname custom`);
+//    20201001 EY: changed outputname from static "custom" to variable referencing the preset name
+      return_string_array.push(` --outputname ${preset_name}`);
       let return_string = return_string_array.join('');
       
       child.execSync(return_string);
@@ -188,7 +192,31 @@ module.exports = {
           y++;
         };
       };
-//    still left: start randomizer server
+//    new code to start randomizer server!!
+      if (return_args[45] > 1) {
+        //using an array to avoid scope issues... need to fix
+        let port_var_array = []
+        let zz = 0;
+        while (zz < 1) {
+          let random_port_var = Math.floor(Math.random() * 1000) + 38281;
+          let port_var_check = shell.exec(`lsof -i:${random_port_var}`, {shell: '/bin/bash'}).stdout;
+          if (!port_var_check) {
+            port_var_array.push(`${random_port_var}`);
+            zz++;
+          };
+        };
+        port_var = port_var_array[0];
+        let serverstart_array = [];
+        serverstart_array.push(`screen -dmS ${return_args[0]} `);
+        serverstart_array.push(`python3.7 ${executeables.lttpr_mw_server} `);
+        serverstart_array.push(`--port ${port_var} `);
+        serverstart_array.push(`--multidata ${execoutputpath.lttpr_mw}${return_args[0]}/ER_${preset_name}_multidata`);
+
+        let serverstart_string = serverstart_array.join('');
+        child.execSync(serverstart_string);
+        message.channel.send(`Server started on port ${port_var}`);
+      };
+//    end new code
     } catch (error) {
       console.error(error);
     };

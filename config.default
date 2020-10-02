@@ -8,6 +8,7 @@
 	"modules": [""],
 	//Key:Value pairs - Key is module, Value is full path to randomizer executeable - examples enclosed
 	"executeables": {"lttpr_mw": "/home/user/multiworld/ALttPEntranceRandomizer/EntranceRandomizer.py",
+					 "lttpr_mw_server": "/home/user/multiworld/ALttPEntranceRandomizer/MultiServer.py",
 					 "second_rando": "/home/user/multiworld/ZOoTRandomizer/Randomizer.py"
 					},
 	//Key:Value pairs - Key is module, Value is full path to randomizer output directory - examples enclosed
